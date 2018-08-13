@@ -66,3 +66,18 @@ cacheSolve <- function(x, ...) {
     ## Return the matrix
     m
 }
+## Let's create a three by three matrix for testing this in-memory matrix function
+
+## vect <- c(3., 4., 1, 2., 3., 21, 5, 9, 10)
+## data <- matrix(vect, nrow=3, ncol=3)
+## inmemorydata <- makeCacheMatrix(data)
+
+## Now print inverse from cache
+> cacheSolve(inmemorydata)
+
+              [,1]          [,2]         [,3]
+[1,]  1.000000e+00  1.110223e-16 3.885781e-16
+[2,] -4.163336e-17  1.000000e+00 0.000000e+00
+[3,]  1.327063e-16 -1.110223e-16 1.000000e+00
+
+## Done
